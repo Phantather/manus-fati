@@ -157,7 +157,7 @@ body {
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
     .latest-row {
         justify-content: center;
     }
