@@ -4,6 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+body {
+    background: #222222;
+}
+
 .container {
     max-width: 940px;
     margin: 0 auto;
@@ -11,10 +16,6 @@
 }
 .header {
     padding: 15px 0;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 .header-nav{
     display: flex;
@@ -153,4 +154,28 @@
     font-size: 20px;
     line-height: 18px;
     color: #907152;
+}
+
+
+@media (max-width: 640px) {
+    .latest-row {
+        justify-content: center;
+    }
+    .latest-card {
+        width: calc(50% - 10px);
+    }
+}
+
+
+@media (max-width: 460px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .header-title {
+        flex-direction: column;
+        width: 30%;
+    }
 }
